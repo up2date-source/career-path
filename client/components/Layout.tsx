@@ -26,7 +26,7 @@ export default function Layout() {
             <Link
               to="/explore"
               className={`text-sm font-medium transition-colors ${
-                isActive('/explore') ? 'text-primary' : 'hover:text-primary'
+                isActive("/explore") ? "text-primary" : "hover:text-primary"
               }`}
             >
               Explore Careers
@@ -34,7 +34,7 @@ export default function Layout() {
             <Link
               to="/assessment"
               className={`text-sm font-medium transition-colors ${
-                isActive('/assessment') ? 'text-primary' : 'hover:text-primary'
+                isActive("/assessment") ? "text-primary" : "hover:text-primary"
               }`}
             >
               Skills Assessment
@@ -42,7 +42,7 @@ export default function Layout() {
             <Link
               to="/learning"
               className={`text-sm font-medium transition-colors ${
-                isActive('/learning') ? 'text-primary' : 'hover:text-primary'
+                isActive("/learning") ? "text-primary" : "hover:text-primary"
               }`}
             >
               Learning Paths
@@ -50,7 +50,7 @@ export default function Layout() {
             <Link
               to="/goals"
               className={`text-sm font-medium transition-colors ${
-                isActive('/goals') ? 'text-primary' : 'hover:text-primary'
+                isActive("/goals") ? "text-primary" : "hover:text-primary"
               }`}
             >
               Goal Tracking
@@ -58,15 +58,19 @@ export default function Layout() {
             <Link
               to="/resources"
               className={`text-sm font-medium transition-colors ${
-                isActive('/resources') ? 'text-primary' : 'hover:text-primary'
+                isActive("/resources") ? "text-primary" : "hover:text-primary"
               }`}
             >
               Resources
             </Link>
           </nav>
           <div className="flex items-center space-x-3">
-            <Button variant="ghost" size="sm" onClick={openSignIn}>Sign In</Button>
-            <Button size="sm" onClick={openSignUp}>Get Started</Button>
+            <Button variant="ghost" size="sm" onClick={openSignIn}>
+              Sign In
+            </Button>
+            <Button size="sm" onClick={openSignUp}>
+              Get Started
+            </Button>
           </div>
         </div>
       </header>
@@ -93,34 +97,83 @@ export default function Layout() {
                 <span className="font-bold text-xl">CareerPath</span>
               </Link>
               <p className="text-muted-foreground">
-                Empowering professionals to discover and achieve their career goals.
+                Empowering professionals to discover and achieve their career
+                goals.
               </p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Platform</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/explore" className="hover:text-foreground">Career Explorer</Link></li>
-                <li><Link to="/assessment" className="hover:text-foreground">Skills Assessment</Link></li>
-                <li><Link to="/learning" className="hover:text-foreground">Learning Paths</Link></li>
-                <li><Link to="/goals" className="hover:text-foreground">Goal Tracking</Link></li>
+                <li>
+                  <Link to="/explore" className="hover:text-foreground">
+                    Career Explorer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/assessment" className="hover:text-foreground">
+                    Skills Assessment
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/learning" className="hover:text-foreground">
+                    Learning Paths
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/goals" className="hover:text-foreground">
+                    Goal Tracking
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Resources</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/resources" className="hover:text-foreground">Career Guides</Link></li>
-                <li><a href="#" className="hover:text-foreground">Industry Reports</a></li>
-                <li><a href="#" className="hover:text-foreground">Salary Data</a></li>
-                <li><a href="#" className="hover:text-foreground">Success Stories</a></li>
+                <li>
+                  <Link to="/resources" className="hover:text-foreground">
+                    Career Guides
+                  </Link>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-foreground">
+                    Industry Reports
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-foreground">
+                    Salary Data
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-foreground">
+                    Success Stories
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/about" className="hover:text-foreground">About Us</Link></li>
-                <li><Link to="/contact" className="hover:text-foreground">Contact</Link></li>
-                <li><Link to="/privacy" className="hover:text-foreground">Privacy Policy</Link></li>
-                <li><Link to="/terms" className="hover:text-foreground">Terms of Service</Link></li>
+                <li>
+                  <Link to="/about" className="hover:text-foreground">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-foreground">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy" className="hover:text-foreground">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/terms" className="hover:text-foreground">
+                    Terms of Service
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
