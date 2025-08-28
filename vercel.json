@@ -16,7 +16,7 @@
   ],
   "functions": {
     "api/index.ts": {
-      "runtime": "@vercel/node@22.x"
+      "runtime": "@vercel/node@22.18.0"
     }
   }
 }
