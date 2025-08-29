@@ -3,7 +3,7 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 import AuthModals from "./auth/AuthModals";
 import Chatbot from "./chatbot/Chatbot";
 import { useAuth } from "@/contexts/AuthContext";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Layout() {
   const location = useLocation();

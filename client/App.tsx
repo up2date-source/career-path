@@ -15,11 +15,13 @@ import CareerDetails from "./pages/CareerDetails";
 import SkillsAssessment from "./pages/SkillsAssessment";
 import LearningPaths from "./pages/LearningPaths";
 import GoalTracking from "./pages/GoalTracking";
+import ConsultPsychiatrist from "./pages/ConsultPsychiatrist";
 import Resources from "./pages/Resources";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import AdminConsultations from "client/pages/AdminConsultations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,11 +42,13 @@ const App = () => (
                 <Route path="assessment" element={<SkillsAssessment />} />
                 <Route path="learning" element={<LearningPaths />} />
                 <Route path="goals" element={<GoalTracking />} />
-                <Route path="resources" element={<Resources />} />
+              <Route path="consult" element={<ConsultPsychiatrist />} />
+              <Route path="resources" element={<Resources />} />
                 <Route path="about" element={<AboutUs />} />
                 <Route path="contact" element={<ContactUs />} />
                 <Route path="terms" element={<TermsOfService />} />
                 <Route path="privacy" element={<PrivacyPolicy />} />
+              <Route path="admin/consultations" element={<AdminConsultations />} />
               </Route>
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

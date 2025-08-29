@@ -2,6 +2,7 @@ import serverless from 'serverless-http';
 import express from 'express';
 import cors from 'cors';
 import { handleDemo } from '../server/routes/demo.ts';
+import { postConsultation, getConsultations } from '../server/routes/consultations.ts';
 
 const app = express();
 
@@ -15,6 +16,8 @@ app.get('/api/ping', (req, res) => {
 });
 
 app.get('/api/demo', handleDemo);
+app.post('/api/consultations', postConsultation);
+app.get('/api/consultations', getConsultations);
 
 // Health check
 app.get('/api/health', (req, res) => {
